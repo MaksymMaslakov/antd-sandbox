@@ -4,25 +4,27 @@
     <a-tab-pane key="1" tab="General" class="tab-content">
       <PublicationDaysList />
     </a-tab-pane>
-    <a-tab-pane key="3" tab="Calendar" class="tab-content">
-      Calendar
+    <a-tab-pane key="2" tab="Calendar" class="tab-content">
+      <TestCalendar />
     </a-tab-pane>
   </a-tabs>
 </template>
 
 <script>
-import Header from "../components/Header.vue";
-import PublicationDaysList from "../components/PublicationDaysList.vue";
+import Header from "@/components/Header.vue";
+import PublicationDaysList from "@/components/PublicationDaysList.vue";
+import TestCalendar from "@/components/TestCalendar.vue";
 
 export default {
   name: "Home",
   components: {
     Header,
     PublicationDaysList,
+    TestCalendar,
   },
   data() {
     return {
-      activeTab: 1,
+      activeTab: 2,
     };
   },
 };
