@@ -2,6 +2,7 @@
   <Header />
   <a-tabs type="card" v-model:activeKey="activeTab">
     <a-tab-pane key="1" tab="General" class="tab-content">
+      <GoalsAndFormtsList></GoalsAndFormtsList>
       <PublicationDaysList />
     </a-tab-pane>
     <a-tab-pane key="2" tab="Calendar" class="tab-content">
@@ -11,13 +12,15 @@
 </template>
 
 <script>
-import Header from "@/components/Header.vue";
-import PublicationDaysList from "@/components/PublicationDaysList.vue";
-import TestCalendar from "@/components/TestCalendar.vue";
+import Header from '@/components/Header.vue';
+import PublicationDaysList from '@/components/PublicationDaysList.vue';
+import TestCalendar from '@/components/TestCalendar.vue';
+import GoalsAndFormtsList from '@/components/GoalsAndFormtsList';
 
 export default {
-  name: "Home",
+  name: 'Home',
   components: {
+    GoalsAndFormtsList,
     Header,
     PublicationDaysList,
     TestCalendar,
