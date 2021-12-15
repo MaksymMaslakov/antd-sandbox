@@ -15,7 +15,7 @@
       <a-input
         :value="control"
         :disabled="!isActive"
-        @update:checked="$emit('update:control', $event)"
+        @update:value="$emit('update:control', $event)"
       ></a-input>
       <slot></slot>
     </div>
